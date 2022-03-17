@@ -1,0 +1,11 @@
+[Unit]
+Description=Twice a month renewal of Let's Encrypt's certificates
+
+[Timer]
+OnCalendar=Mon *-*-1..14 4:00:00
+RandomizedDelaySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target
+
